@@ -4,7 +4,7 @@ let vimsettings_bundlepath = "BUNDLE_PATH"
 let vimsettings_username = "USERNAME"
 
 " Vundle setup
-exec ":set runtimepath+=" . vimsettings_bundlepath . "/vundle/"
+exec ":set runtimepath+=" . vimsettings_bundlepath . "/Vundle.vim/"
 call vundle#begin(vimsettings_bundlepath)
 Plugin 'gmarik/vundle'
 
