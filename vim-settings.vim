@@ -40,7 +40,8 @@ vmap H ^
 nmap L $
 vmap L $
 
-" control-keys undo, save, cut copy paste
+" control-keys for select all, undo, save, cut, copy, paste
+nmap <C-a> ggVG
 nmap <C-s> :w<CR>
 imap <C-s> :w<CR>
 nmap <C-z> u
