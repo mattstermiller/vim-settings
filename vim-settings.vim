@@ -31,6 +31,12 @@ nmap <Space> i <Esc>l
 nmap <CR> o<Esc>
 nmap <S-Enter> O<Esc>
 
+" indenting
+nmap <Tab> >>
+nmap <S-Tab> <<
+vmap <Tab> >
+vmap <S-Tab> <
+
 " split line
 nmap <C-J> hr<CR>
 
