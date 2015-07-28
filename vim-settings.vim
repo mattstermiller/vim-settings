@@ -10,9 +10,12 @@ colorscheme slate
 syntax on
 
 set directory=$HOME/.vim/swap//
-set tabstop=4
 set scrolloff=8
 set nu "line numbers
+
+filetype plugin indent on
+set tabstop=4
+set shiftwidth=4
 
 set guioptions-=m  "remove menu bar
 set guioptions-=T  "remove toolbar
