@@ -1,3 +1,10 @@
+" plugins
+Plugin 'bling/vim-airline' " status bar
+Plugin 'tpope/vim-surround' " manipulate surround chars
+Plugin 'scrooloose/nerdtree' " filesystem explorer
+Plugin 'ctrlpvim/ctrlp.vim' " fuzzy file finder
+Plugin 'OrangeT/vim-csharp'
+
 " window/appearance
 if has("gui_running")
   " GUI is running or is about to start.
