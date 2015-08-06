@@ -29,7 +29,7 @@ set guioptions-=T  "remove toolbar
 set guioptions-=r  "remove right scroll bar
 
 "command aliases
-command Sorc so $MYVIMRC
+command! Sorc so $MYVIMRC
 
 " find settings
 set ignorecase
