@@ -47,8 +47,8 @@ nmap <Tab> >>
 nmap <S-Tab> <<
 vmap <Tab> >
 vmap <S-Tab> <
-imap <Tab> <Esc>>>
-imap <S-Tab> <Esc><<
+imap <Tab> <C-t>
+imap <S-Tab> <C-d>
 
 " split line
 nmap <C-J> hr<CR>
