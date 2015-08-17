@@ -18,17 +18,19 @@ syntax on
 
 set directory=$HOME/.vim/swap//
 set scrolloff=8
-set nu "line numbers
+set nu " line numbers
 
 filetype plugin indent on
 set tabstop=4
 set shiftwidth=4
 
-set guioptions-=m  "remove menu bar
-set guioptions-=T  "remove toolbar
-set guioptions-=r  "remove right scroll bar
+set guioptions-=m  " remove menu bar
+set guioptions-=T  " remove toolbar
+set guioptions-=r  " remove right scroll bar
 
-"command aliases
+set laststatus=2 " airline always on
+
+" command aliases
 command! Sorc so $MYVIMRC
 
 " find settings
