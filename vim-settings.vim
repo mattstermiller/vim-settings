@@ -15,6 +15,7 @@ endif
 set guifont=Consolas:h10
 colorscheme slate
 syntax on
+set tw=120
 
 set directory=$HOME/.vim/swap//
 set scrolloff=8
