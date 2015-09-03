@@ -15,7 +15,7 @@ endif
 set guifont=Consolas:h10
 colorscheme slate
 syntax on
-set tw=120
+set textwidth=120
 
 set directory=$HOME/.vim/swap//
 set scrolloff=8
@@ -24,6 +24,7 @@ set nu " line numbers
 filetype plugin indent on
 set tabstop=4
 set shiftwidth=4
+set autoindent
 
 set guioptions-=m  " remove menu bar
 set guioptions-=T  " remove toolbar
@@ -37,6 +38,7 @@ command! Sorc so $MYVIMRC
 " find settings
 set ignorecase
 set smartcase
+set hlsearch
 
 imap jj <Esc>
 
