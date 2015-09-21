@@ -74,10 +74,13 @@ imap <C-s> :w<CR>
 nmap <C-z> u
 vnoremap <C-x> "+d
 vnoremap <C-c> "+y
-noremap <C-v> "+p
+nnoremap <C-v> "+p
+vnoremap <C-v> "+p
+inoremap <C-v> <Esc>"+pa
 
 " trim trailing spaces
 nmap <C-T> :%s/\s\+$/<CR>
 
 " syntax filetype associations
+au BufNewFile,BufRead *.nuspec setlocal ft=xml
 au BufNewFile,BufRead *.cls setlocal ft=vb
