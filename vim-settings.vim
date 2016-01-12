@@ -39,6 +39,7 @@ command! Sorc so $MYVIMRC
 set ignorecase
 set smartcase
 set hlsearch
+nnoremap <esc> :noh<return><esc> " clear search highlight with escape
 
 imap jj <Esc>
 
