@@ -43,6 +43,7 @@ set hlsearch
 nnoremap <esc> :noh<return><esc>
 
 imap jj <Esc>
+nnoremap U <C-r>
 
 " enable backspace
 set backspace=indent,eol,start
