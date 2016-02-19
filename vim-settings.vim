@@ -49,7 +49,6 @@ nnoremap U <c-r>
 set backspace=indent,eol,start
 
 " normal mode whitespace
-nmap <space> i <esc>l
 nmap <cr> o<esc>
 nmap <s-enter> O<esc>
 
@@ -83,8 +82,14 @@ nnoremap <c-v> "+p
 vnoremap <c-v> "+p
 inoremap <c-v> <esc>"+pa
 
+" leader key
+let mapleader=" "
+nmap <leader>q :vsc Edit.QuickInfo<cr>
+nmap <leader>d :vsc Edit.GoToDefinition<cr>
+nmap <leader>i :vsc ReSharper.ReSharper_GotoImplementation<cr>
+nmap <leader>u :vsc ReSharper.ReSharper_FindUsages<cr>
 " trim trailing spaces
-nmap <C-T> :%s/\s\+$/<CR>
+nmap <leader>t :%s/[ \t]\+$/<cr>
 
 " syntax filetype associations
 au BufNewFile,BufRead *.nuspec setlocal ft=xml
