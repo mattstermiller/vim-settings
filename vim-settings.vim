@@ -64,11 +64,13 @@ imap <s-tab> <c-d>
 " split line (compliment of <s-j> to join)
 nmap <s-k> hr<cr>
 
-" home/end
+" navigation
 nmap H ^
 vmap H ^
 nmap L $
 vmap L $
+nmap <c-j> <c-d>
+nmap <c-k> <c-u>
 
 " control-keys for select all, undo, save, cut, copy, paste
 nmap <c-a> ggVG
