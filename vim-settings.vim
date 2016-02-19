@@ -42,27 +42,27 @@ set hlsearch
 " clear search highlight with escape
 nnoremap <esc> :noh<return><esc>
 
-imap jj <Esc>
-nnoremap U <C-r>
+imap jj <esc>
+nnoremap U <c-r>
 
 " enable backspace
 set backspace=indent,eol,start
 
 " normal mode whitespace
-nmap <Space> i <Esc>l
-nmap <CR> o<Esc>
-nmap <S-Enter> O<Esc>
+nmap <space> i <esc>l
+nmap <cr> o<esc>
+nmap <s-enter> O<esc>
 
 " indenting
-nmap <Tab> >>
-nmap <S-Tab> <<
-vmap <Tab> >
-vmap <S-Tab> <
-imap <Tab> <C-t>
-imap <S-Tab> <C-d>
+nmap <tab> >>
+nmap <s-tab> <<
+vmap <tab> >
+vmap <s-tab> <
+imap <tab> <c-t>
+imap <s-tab> <c-d>
 
-" split line
-nmap <C-J> hr<CR>
+" split line (compliment of <s-j> to join)
+nmap <s-k> hr<cr>
 
 " home/end
 nmap H ^
@@ -71,15 +71,15 @@ nmap L $
 vmap L $
 
 " control-keys for select all, undo, save, cut, copy, paste
-nmap <C-a> ggVG
-nmap <C-s> :w<CR>
-imap <C-s> :w<CR>
-nmap <C-z> u
-vnoremap <C-x> "+d
-vnoremap <C-c> "+y
-nnoremap <C-v> "+p
-vnoremap <C-v> "+p
-inoremap <C-v> <Esc>"+pa
+nmap <c-a> ggVG
+nmap <c-s> :w<cr>
+imap <c-s> :w<cr>
+nmap <c-z> u
+vnoremap <c-x> "+d
+vnoremap <c-c> "+y
+nnoremap <c-v> "+p
+vnoremap <c-v> "+p
+inoremap <c-v> <esc>"+pa
 
 " trim trailing spaces
 nmap <C-T> :%s/\s\+$/<CR>
