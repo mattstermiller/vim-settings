@@ -72,10 +72,10 @@ nmap <c-j> <c-d>
 nmap <c-k> <c-u>
 
 " control-keys for select all, undo, save, cut, copy, paste
-nmap <c-a> ggVG
-nmap <c-s> :w<cr>
-imap <c-s> :w<cr>
-nmap <c-z> u
+nnoremap <c-a> ggVG
+nnoremap <c-s> :w<cr>
+inoremap <c-s> <esc>:w<cr>a
+nnoremap <c-z> u
 vnoremap <c-x> "+d
 vnoremap <c-c> "+y
 nnoremap <c-v> "+p
