@@ -34,6 +34,7 @@ set laststatus=2 " airline always on
 
 " command aliases
 command! Sorc so $MYVIMRC
+command! Sorcvs so ~\_vsvimrc
 
 " find settings
 set ignorecase
@@ -84,8 +85,11 @@ inoremap <c-v> <esc>"+pa
 
 " leader key
 let mapleader=" "
+nmap <leader>s viwp
+nmap <leader>b :vsc View.NavigateBackward<cr>
+nmap <leader>f :vsc View.NavigateForward<cr>
 nmap <leader>q :vsc Edit.QuickInfo<cr>
-nmap <leader>d :vsc Edit.GoToDefinition<cr>
+nmap <leader>d :vsc ReSharper.ReSharper_GoToDeclaration<cr>
 nmap <leader>i :vsc ReSharper.ReSharper_GotoImplementation<cr>
 nmap <leader>u :vsc ReSharper.ReSharper_FindUsages<cr>
 " trim trailing spaces
