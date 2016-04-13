@@ -41,7 +41,7 @@ set ignorecase
 set smartcase
 set hlsearch
 " clear search highlight with escape
-nnoremap <esc> :noh<return><esc>
+nnoremap <silent> <esc> :noh<return><esc>
 
 imap jj <esc>
 nnoremap U <c-r>
@@ -85,16 +85,16 @@ inoremap <c-v> <esc>"+pa
 
 " leader key
 let mapleader=" "
-nmap <leader>s viwp
-nmap <leader>b :vsc View.NavigateBackward<cr>
-nmap <leader>f :vsc View.NavigateForward<cr>
-nmap <leader>q :vsc Edit.QuickInfo<cr>
-nmap <leader>e :vsc ReSharper.ReSharper_GotoNextErrorInSolution<cr>
-nmap <leader>d :vsc ReSharper.ReSharper_GoToDeclaration<cr>
-nmap <leader>i :vsc ReSharper.ReSharper_GotoImplementation<cr>
-nmap <leader>u :vsc ReSharper.ReSharper_FindUsages<cr>
+nmap <silent> <leader>s viwp
+nmap <silent> <leader>b :vsc View.NavigateBackward<cr>
+nmap <silent> <leader>f :vsc View.NavigateForward<cr>
+nmap <silent> <leader>q :vsc Edit.QuickInfo<cr>
+nmap <silent> <leader>e :vsc ReSharper.ReSharper_GotoNextErrorInSolution<cr>
+nmap <silent> <leader>d :vsc ReSharper.ReSharper_GoToDeclaration<cr>
+nmap <silent> <leader>i :vsc ReSharper.ReSharper_GotoImplementation<cr>
+nmap <silent> <leader>u :vsc ReSharper.ReSharper_FindUsages<cr>
 " trim trailing spaces
-nmap <leader>t :%s/[ \t]\+$/<cr>
+nmap <silent> <leader>t :%s/[ \t]\+$/<cr>
 
 " syntax filetype associations
 au BufNewFile,BufRead *.nuspec setlocal ft=xml
