@@ -89,6 +89,7 @@ nmap <leader>s viwp
 nmap <leader>b :vsc View.NavigateBackward<cr>
 nmap <leader>f :vsc View.NavigateForward<cr>
 nmap <leader>q :vsc Edit.QuickInfo<cr>
+nmap <leader>e :vsc ReSharper.ReSharper_GotoNextErrorInSolution<cr>
 nmap <leader>d :vsc ReSharper.ReSharper_GoToDeclaration<cr>
 nmap <leader>i :vsc ReSharper.ReSharper_GotoImplementation<cr>
 nmap <leader>u :vsc ReSharper.ReSharper_FindUsages<cr>
