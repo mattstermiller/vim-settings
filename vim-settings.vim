@@ -69,7 +69,9 @@ vmap H ^
 nmap L $
 vmap L $
 nmap <c-j> <c-d>
+vmap <c-j> <c-d>
 nmap <c-k> <c-u>
+vmap <c-k> <c-u>
 
 " control-keys for select all, undo, save, cut, copy, paste
 nnoremap <c-a> ggVG
