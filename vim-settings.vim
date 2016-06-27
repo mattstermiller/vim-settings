@@ -40,7 +40,7 @@ set ignorecase
 set smartcase
 set hlsearch
 " clear search highlight with escape
-nnoremap <silent> <esc> :noh<return><esc>
+nnoremap <silent> ? :noh<return>
 
 imap jj <esc>
 nnoremap U <c-r>
