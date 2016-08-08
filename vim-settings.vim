@@ -60,6 +60,32 @@ vmap <s-tab> <
 imap <tab> <c-t>
 imap <s-tab> <c-d>
 
+function ToggleTab()
+    if &expandtab
+        set noexpandtab
+        echo "indenting with tabs"
+    else
+        set expandtab
+        echo "indenting with spaces"
+    endif
+endfunction
+
+nmap <F9> mz:execute ToggleTab()<cr>'z
+
+set listchars=eol:$,tab:>-,trail:~,extends:>,precedes:<
+
+function ToggleWhiteSpace()
+    if &list
+        set nolist
+        echo "showing whitespace"
+    else
+        set list
+        echo "not showing whitespace"
+    endif
+endfunction
+
+nmap <F10> mz:execute ToggleWhiteSpace()<cr>'z
+
 " split line (compliment of <s-j> to join)
 nmap <s-k> hr<cr>
 
