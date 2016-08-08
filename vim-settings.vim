@@ -1,6 +1,7 @@
 " plugins
 Plugin 'bling/vim-airline' " status bar
 Plugin 'tpope/vim-surround' " manipulate surround chars
+Plugin 'chaoren/vim-wordmotion'
 Plugin 'scrooloose/nerdtree' " filesystem explorer
 Plugin 'ctrlpvim/ctrlp.vim' " fuzzy file finder
 Plugin 'OrangeT/vim-csharp'
@@ -98,6 +99,8 @@ nmap <c-j> <c-d>
 vmap <c-j> <c-d>
 nmap <c-k> <c-u>
 vmap <c-k> <c-u>
+
+let g:wordmotion_prefix = ','
 
 " control-keys for select all, undo, save, cut, copy, paste
 nnoremap <c-a> ggVG
