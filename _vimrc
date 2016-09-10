@@ -1,5 +1,5 @@
 " Path to the bundle folder
-let vimsettings_bundlepath = "BUNDLE_PATH"
+let vimsettings_bundlepath = $HOME . "/.vim/bundle"
 " Git username of vim-settings
 let vimsettings_username = "USERNAME"
 
