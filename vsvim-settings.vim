@@ -1,7 +1,7 @@
 ﻿:so ~\.vim\bundle\vim-settings\vim-settings.vim
 
-nmap <silent> <leader>j :vsc View.NavigateForward<cr>
-nmap <silent> <leader>k :vsc View.NavigateBackward<cr>
+nmap <silent> <leader>h :vsc View.NavigateBackward<cr>
+nmap <silent> <leader>l :vsc View.NavigateForward<cr>
 nmap <silent> <leader>q :vsc Edit.QuickInfo<cr>
 nmap <silent> <leader>e :vsc ReSharper.ReSharper_GotoNextErrorInSolution<cr>
 nmap <silent> <leader>E :vsc View.NextError<cr>
