@@ -6,7 +6,7 @@ nmap <silent> <leader>q :vsc Edit.QuickInfo<cr>
 nmap <silent> <leader>e :vsc ReSharper.ReSharper_GotoNextErrorInSolution<cr>
 nmap <silent> <leader>E :vsc View.NextError<cr>
 nmap <silent> <leader>d :vsc ReSharper.ReSharper_GoToDeclaration<cr>
-nmap <silent> <leader>i :vsc ReSharper.ReSharper_GotoImplementation<cr>
+nmap <silent> <leader>i :vsc ReSharper.ReSharper_GotoImplementations<cr>
 nmap <silent> <leader>u :vsc ReSharper.ReSharper_FindUsages<cr>
 nmap <silent> <leader>f :vsc ReSharper.ReSharper_ReformatCode<cr>
 vmap <silent> <leader>f :vsc ReSharper.ReSharper_ReformatCode<cr>
@@ -18,8 +18,8 @@ nmap <silent> <leader>rs :vsc ReSharper.ReSharper_ChangeSignature<cr>
 nmap <silent> <leader>ri :vsc ReSharper.ReSharper_InlineVariable<cr>
 nmap <silent> <leader>rv :vsc ReSharper.ReSharper_IntroVariable<cr>
 vmap <silent> <leader>rv :vsc ReSharper.ReSharper_IntroVariable<cr>
-nmap <silent> <leader>rp :vsc ReSharper.ReSharper_IntroParameter<cr>
-vmap <silent> <leader>rp :vsc ReSharper.ReSharper_IntroParameter<cr>
+nmap <silent> <leader>rp :vsc ReSharper.ReSharper_IntroduceParameter<cr>
+vmap <silent> <leader>rp :vsc ReSharper.ReSharper_IntroduceParameter<cr>
 nmap <silent> <leader>rf :vsc ReSharper.ReSharper_IntroduceField<cr>
 vmap <silent> <leader>rf :vsc ReSharper.ReSharper_IntroduceField<cr>
 nmap <silent> <leader>rm :vsc ReSharper.ReSharper_ExtractMethod<cr>
