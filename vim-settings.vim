@@ -61,6 +61,8 @@ vmap <s-tab> <
 imap <tab> <c-t>
 imap <s-tab> <c-d>
 
+set expandtab
+
 function ToggleTab()
     if &expandtab
         set noexpandtab
