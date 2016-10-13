@@ -3,11 +3,14 @@
 nmap <silent> <leader>h :vsc View.NavigateBackward<cr>
 nmap <silent> <leader>l :vsc View.NavigateForward<cr>
 nmap <silent> <leader>q :vsc Edit.QuickInfo<cr>
+nmap <silent> <leader>c :vsc ReSharper_AltEnter<cr>
 nmap <silent> <leader>e :vsc ReSharper.ReSharper_GotoNextErrorInSolution<cr>
 nmap <silent> <leader>E :vsc View.NextError<cr>
 nmap <silent> <leader>d :vsc ReSharper.ReSharper_GoToDeclaration<cr>
 nmap <silent> <leader>i :vsc ReSharper.ReSharper_GotoImplementations<cr>
 nmap <silent> <leader>u :vsc ReSharper.ReSharper_FindUsages<cr>
+nmap <silent> <leader>g :vsc ReSharper.ReSharper_GotoType<cr>
+vmap <silent> <leader>g :vsc ReSharper.ReSharper_GotoType<cr>
 nmap <silent> <leader>f :vsc ReSharper.ReSharper_ReformatCode<cr>
 vmap <silent> <leader>f :vsc ReSharper.ReSharper_ReformatCode<cr>
 nmap <silent> <leader>rt :vsc ReSharper.ReSharper_RefactorThis<cr>
