@@ -11,7 +11,7 @@ nmap <silent> <leader>i :vsc ReSharper.ReSharper_GotoImplementations<cr>
 nmap <silent> <leader>u :vsc ReSharper.ReSharper_FindUsages<cr>
 nmap <silent> <leader>g :vsc ReSharper.ReSharper_GotoType<cr>
 vmap <silent> <leader>g :vsc ReSharper.ReSharper_GotoType<cr>
-nmap <silent> <leader>f :vsc ReSharper.ReSharper_ReformatCode<cr>
+nmap <silent> <leader>f V:vsc ReSharper.ReSharper_ReformatCode<cr>
 vmap <silent> <leader>f :vsc ReSharper.ReSharper_ReformatCode<cr>
 nmap <silent> <leader>rt :vsc ReSharper.ReSharper_RefactorThis<cr>
 vmap <silent> <leader>rt :vsc ReSharper.ReSharper_RefactorThis<cr>
