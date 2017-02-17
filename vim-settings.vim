@@ -104,7 +104,7 @@ vmap <c-k> <c-u>
 
 let g:wordmotion_prefix = ','
 
-" control-keys for select all, undo, save, cut, copy, paste
+" control-keys for select all, undo, save, cut, copy, paste, quit
 nnoremap <c-a> ggVG
 nnoremap <c-s> :w<cr>
 inoremap <c-s> <esc>:w<cr>a
@@ -114,6 +114,9 @@ vnoremap <c-c> "+y
 nnoremap <c-v> "+p
 vnoremap <c-v> "+p
 inoremap <c-v> <esc>"+pa
+nnoremap <c-w> :q<cr>
+inoremap <c-w> <esc>:q<cr>
+vnoremap <c-w> <esc>:q<cr>
 
 " syntax filetype associations
 au BufNewFile,BufRead *.nuspec setlocal ft=xml
