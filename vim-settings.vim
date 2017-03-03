@@ -128,3 +128,5 @@ nmap <silent> <leader>s viwp
 nmap <silent> <leader>S viw"+p
 " trim trailing spaces
 nmap <silent> <leader>t :%s/[ \t]\+$/<cr>
+" fix digitally imported playlist
+nmap <silent> <leader>md :%s/\(Digitally Imported\) - \(.*\)/\2 - \1 Premium/g<cr>
