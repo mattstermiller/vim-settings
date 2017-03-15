@@ -35,6 +35,8 @@ set laststatus=2 " airline always on
 " command aliases
 command! Sorc so $MYVIMRC
 command! Sorcvs so ~\_vsvimrc
+" fix digitally imported playlist
+command! Fixdi %s/\(Digitally Imported\) - \(.*\)/\2 - \1 Premium/g
 
 " find settings
 set ignorecase
@@ -128,5 +130,3 @@ nmap <silent> <leader>s viwp
 nmap <silent> <leader>S viw"+p
 " trim trailing spaces
 nmap <silent> <leader>t :%s/[ \t]\+$/<cr>
-" fix digitally imported playlist
-nmap <silent> <leader>md :%s/\(Digitally Imported\) - \(.*\)/\2 - \1 Premium/g<cr>
