@@ -95,10 +95,12 @@ nmap <F10> mz:execute ToggleWhiteSpace()<cr>'z
 nmap <s-k> hr<cr>
 
 " navigation
-nmap H ^
-vmap H ^
-nmap L $
-vmap L $
+nnoremap H ^
+vnoremap H ^
+onoremap H ^
+nnoremap L $
+vnoremap L $
+onoremap L $
 nmap <c-j> <c-d>
 vmap <c-j> <c-d>
 nmap <c-k> <c-u>
