@@ -1,5 +1,7 @@
 ﻿:so ~\.vim\bundle\vim-settings\vim-settings.vim
 
+nmap <silent> gi :vsc Edit.GoToImplementation<cr>
+nmap <silent> gl :vsc View.SolutionExplorer<cr>
 nmap <silent> <leader>h :vsc View.NavigateBackward<cr>
 nmap <silent> <leader>l :vsc View.NavigateForward<cr>
 nmap <silent> <leader>q :vsc Edit.QuickInfo<cr>
