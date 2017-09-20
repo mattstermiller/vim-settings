@@ -2,6 +2,11 @@
 
 nmap <silent> gi :vsc Edit.GoToImplementation<cr>
 nmap <silent> gl :vsc View.SolutionExplorer<cr>
+nmap <silent> <leader>ws :vsc Window.NewVerticalTabGroup<cr>
+nnoremap <silent> <leader>wh <c-w>h
+nnoremap <silent> <leader>wl <c-w>l
+nmap <silent> <leader>wH :vsc Window.MovetoPreviousTabGroup<cr>
+nmap <silent> <leader>wL :vsc Window.MovetoNextTabGroup<cr>
 nmap <silent> <leader>h :vsc View.NavigateBackward<cr>
 nmap <silent> <leader>l :vsc View.NavigateForward<cr>
 nmap <silent> <leader>q :vsc Edit.QuickInfo<cr>
