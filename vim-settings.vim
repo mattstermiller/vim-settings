@@ -92,7 +92,7 @@ endfunction
 nmap <F10> mz:execute ToggleWhiteSpace()<cr>'z
 
 " split line (compliment of <s-j> to join)
-nmap <s-k> hr<cr>
+nmap <s-k> hr<cr>H
 
 " navigation
 nnoremap H ^
