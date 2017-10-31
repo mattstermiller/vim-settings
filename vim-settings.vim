@@ -45,6 +45,9 @@ set hlsearch
 " clear search highlight with escape
 nnoremap <silent> ? :noh<return>
 
+" max time between key presses to trigger a multi-key binding
+set timeoutlen=200
+
 imap jj <esc>
 nnoremap U <c-r>
 
