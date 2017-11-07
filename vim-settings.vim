@@ -7,7 +7,7 @@ Plugin 'ctrlpvim/ctrlp.vim' " fuzzy file finder
 Plugin 'OrangeT/vim-csharp'
 
 " max time between key presses to trigger a multi-key binding
-set timeoutlen=200
+set timeoutlen=300
 " enable backspace
 set backspace=indent,eol,start
 
