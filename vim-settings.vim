@@ -81,6 +81,9 @@ nmap <silent> <leader>S viw"+p
 " trim trailing spaces
 nmap <silent> <leader>t :%s/[ \t]\+$/<cr>
 
+" auto-close F# quotations
+inoremap <@ <@ @><Left><Left><Left>
+
 " window/appearance
 set nu " line numbers
 set scrolloff=8
