@@ -28,7 +28,7 @@ set hlsearch
 " clear search highlight with escape
 nnoremap <silent> ? :noh<return>
 
-imap jj <esc>
+imap kj <esc>
 nnoremap U <c-r>
 
 " normal mode whitespace
