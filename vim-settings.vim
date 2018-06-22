@@ -21,6 +21,9 @@ set tabstop=4
 set shiftwidth=4
 set autoindent
 
+" wrap settings
+set textwidth=120
+
 " find settings
 set ignorecase
 set smartcase
