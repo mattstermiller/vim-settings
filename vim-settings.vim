@@ -84,8 +84,9 @@ nmap <silent> <leader>S viw"+p
 " trim trailing spaces
 nmap <silent> <leader>t :%s/[ \t]\+$/<cr>
 
-" auto-close F# quotations
+" auto-close F# quotations and attributes
 inoremap <@ <@ @><Left><Left><Left>
+inoremap [< [<lt>>]<Left><Left>
 
 " window/appearance
 set nu " line numbers
