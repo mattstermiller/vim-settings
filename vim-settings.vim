@@ -138,5 +138,5 @@ nmap <F10> mz:execute ToggleWhiteSpace()<cr>'z
 command! Sorc so $MYVIMRC
 command! Sorcvs so ~\_vsvimrc
 " fix digitally imported playlist
-command! Fixdi %s/\(Digitally Imported\) - \(.*\)/\2 - \1 Premium/g
+command! Fixdi %s/\(DI.FM\) - \(.*\)/\2 - \1 Premium/g
 
