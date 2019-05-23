@@ -1,8 +1,10 @@
 ﻿:so ~\.vim\bundle\vim-settings\vim-settings.vim
 
+nmap <silent> <leader><leader>s :vsc Tools.InvokeAceJumpCommand<cr>
 nmap <silent> gi :vsc Edit.GoToImplementation<cr>
 nmap <silent> gl :vsc View.SolutionExplorer<cr>
 nmap <silent> <leader>ws :vsc Window.NewVerticalTabGroup<cr>
+" switching between tab groups
 nnoremap <silent> <leader>wh <c-w>h
 nnoremap <silent> <leader>wl <c-w>l
 nmap <silent> <leader>wH :vsc Window.MovetoPreviousTabGroup<cr>
