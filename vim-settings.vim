@@ -1,18 +1,5 @@
-" plugins
-Plugin 'bling/vim-airline' " status bar
-Plugin 'tpope/vim-surround' " manipulate surround chars
-Plugin 'chaoren/vim-wordmotion'
-Plugin 'scrooloose/nerdtree' " filesystem explorer
-Plugin 'ctrlpvim/ctrlp.vim' " fuzzy file finder
-Plugin 'OrangeT/vim-csharp'
-
-" max time between key presses to trigger a multi-key binding
-set timeoutlen=400
 " enable backspace
 set backspace=indent,eol,start
-
-" write swap files here instead of beside each file
-set directory=$HOME/.vim/swap//
 
 " indentation settings
 filetype plugin indent on
@@ -31,23 +18,26 @@ set hlsearch
 " clear search highlight with Enter
 nnoremap <silent> <cr> :noh<cr><cr>
 
-imap kj <esc>
+" max time between key presses to trigger a multi-key binding
+set timeoutlen=400
+
+inoremap kj <esc>
 nnoremap U <c-r>
 
 " normal mode whitespace
-nmap <cr> o<esc>
-nmap <s-enter> O<esc>
+nnoremap <cr> o<esc>
+nnoremap <s-cr> O<esc>
 
 " indenting
-nmap <tab> >>
-nmap <s-tab> <<
-vmap <tab> >
-vmap <s-tab> <
-imap <tab> <c-t>
-imap <s-tab> <c-d>
+nnoremap <tab> >>
+nnoremap <s-tab> <<
+vnoremap <tab> >
+vnoremap <s-tab> <
+inoremap <tab> <c-t>
+inoremap <s-tab> <c-d>
 
 " split line (compliment of <s-j> to join)
-nmap <s-k> hr<cr>H
+nnoremap <s-k> hr<cr>H
 
 " navigation
 nnoremap H ^
@@ -56,12 +46,10 @@ onoremap H ^
 nnoremap L $
 vnoremap L $
 onoremap L $
-nmap <c-j> <c-d>
-vmap <c-j> <c-d>
-nmap <c-k> <c-u>
-vmap <c-k> <c-u>
-
-let g:wordmotion_prefix = ','
+nnoremap <c-j> <c-d>
+vnoremap <c-j> <c-d>
+nnoremap <c-k> <c-u>
+vnoremap <c-k> <c-u>
 
 " control-keys for select all, undo, save, cut, copy, paste, quit
 nnoremap <c-a> ggVG
@@ -79,14 +67,36 @@ vnoremap <c-w> <esc>:q<cr>
 
 " leader key
 let mapleader=" "
-nmap <silent> <leader>s viwp
-nmap <silent> <leader>S viw"+p
-" trim trailing spaces
-nmap <silent> <leader>t :%s/[ \t]\+$/<cr>
+" swap word under cursor with yank register
+nnoremap <silent> <leader>s viwp
+" swap word under cursor with system clipboard
+nnoremap <silent> <leader>S viw"+p
+" trim trailing spaces in file
+nnoremap <silent> <leader>t :%s/[ \t]\+$/<cr>
 
 " auto-close F# quotations and attributes
 inoremap <@ <@ @><Left><Left><Left>
 inoremap [< [<lt>>]<Left><Left>
+
+" command aliases
+command! Sorc so $MYVIMRC
+command! Sorcvs so ~\_vsvimrc
+" fix digitally imported playlist
+command! Fixdi %s/\(DI.FM\) - \(.*\)/\2 - \1 Premium/g
+
+
+" write swap files here instead of beside each file
+set directory=$HOME/.vim/swap//
+
+" plugins
+Plugin 'bling/vim-airline' " status bar
+Plugin 'tpope/vim-surround' " manipulate surround chars
+Plugin 'chaoren/vim-wordmotion'
+Plugin 'scrooloose/nerdtree' " filesystem explorer
+Plugin 'ctrlpvim/ctrlp.vim' " fuzzy file finder
+Plugin 'OrangeT/vim-csharp'
+
+let g:wordmotion_prefix = ','
 
 " window/appearance
 set nu " line numbers
@@ -132,10 +142,4 @@ function ToggleWhiteSpace()
     endif
 endfunction
 nmap <F10> mz:execute ToggleWhiteSpace()<cr>'z
-
-" command aliases
-command! Sorc so $MYVIMRC
-command! Sorcvs so ~\_vsvimrc
-" fix digitally imported playlist
-command! Fixdi %s/\(DI.FM\) - \(.*\)/\2 - \1 Premium/g
 
