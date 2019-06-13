@@ -94,7 +94,6 @@ set scrolloff=8
 set guifont=Consolas:h10
 set guioptions-=m  " remove menu bar
 set guioptions-=T  " remove toolbar
-set guioptions-=r  " remove right scroll bar
 set laststatus=2 " airline always on
 colorscheme slate
 syntax on
