@@ -3,7 +3,9 @@ Syncs personal VIM settings using Vundle.
 
 ### Setting up your own GitHub-hosted Vim settings
 - Clone this repository.
-- Replace the ``vim-settings.vim`` with your own vimrc.
+- Replace the ``common.vim`` with your own vimrc.
+- If you use VS Vim, you may want to separate the settings specific to terminal vim into ``vim.vim`` and settings
+  specific to VS into ``vsvim.vim`` as I have.
 
 ### Local setup
 - Install [vundle](https://github.com/gmarik/vundle). Follow the setup instructions until you have cloned the Vundle repo, before you setup a vimrc.
