@@ -1,5 +1,6 @@
 inoremap kj <esc>
 nnoremap U <c-r>
+nnoremap Y y$
 
 " normal mode whitespace
 nnoremap <cr> o<esc>
