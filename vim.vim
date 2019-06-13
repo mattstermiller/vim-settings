@@ -22,13 +22,13 @@ command! Sorcvs so ~\_vsvimrc
 command! Fixdi %s/\(DI.FM\) - \(.*\)/\2 - \1 Premium/g
 
 " window/appearance
+colorscheme slate
+set guifont=Consolas:h12
 set nu " line numbers
 set scrolloff=8
-set guifont=Consolas:h10
 set guioptions-=m  " remove menu bar
 set guioptions-=T  " remove toolbar
 set laststatus=2 " airline always on
-colorscheme slate
 syntax on
 if has("gui_running")
   " GUI is running or is about to start.
