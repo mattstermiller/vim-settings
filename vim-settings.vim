@@ -28,8 +28,8 @@ set textwidth=120
 set ignorecase
 set smartcase
 set hlsearch
-" clear search highlight with escape
-nnoremap <silent> ? :noh<return>
+" clear search highlight with Enter
+nnoremap <silent> <cr> :noh<cr><cr>
 
 imap kj <esc>
 nnoremap U <c-r>
