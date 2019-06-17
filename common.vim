@@ -3,7 +3,8 @@ nnoremap U <c-r>
 nnoremap Y y$
 
 " normal mode whitespace
-nnoremap <cr> o<esc>
+" clear search highlight with Enter
+nnoremap <silent> <cr> :noh<cr>o<esc>
 nnoremap <s-cr> O<esc>
 
 " indenting
@@ -73,8 +74,6 @@ set textwidth=120
 set ignorecase
 set smartcase
 set hlsearch
-" clear search highlight with Enter
-nnoremap <silent> <cr> :noh<cr><cr>
 
 " max time between key presses to trigger a multi-key binding
 set timeoutlen=400
