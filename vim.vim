@@ -1,4 +1,4 @@
-so ~\.vim\bundle\vim-settings\common.vim
+so ~/.vim/bundle/vim-settings/common.vim
 
 " write swap files here instead of beside each file
 set directory=$HOME/.vim/swap//

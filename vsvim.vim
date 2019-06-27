@@ -1,4 +1,4 @@
-﻿so ~\.vim\bundle\vim-settings\common.vim
+﻿so ~/.vim/bundle/vim-settings/common.vim
 
 nmap <leader><leader>s :vsc Tools.InvokeAceJumpCommand<cr>
 nmap gi :vsc Edit.GoToImplementation<cr>
