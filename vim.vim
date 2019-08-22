@@ -58,10 +58,10 @@ set listchars=eol:$,tab:>-,trail:~,extends:>,precedes:<
 function ToggleWhiteSpace()
     if &list
         set nolist
-        echo "showing whitespace"
+        echo "not showing whitespace"
     else
         set list
-        echo "not showing whitespace"
+        echo "showing whitespace"
     endif
 endfunction
 nnoremap <F10> mz:execute ToggleWhiteSpace()<cr>'z
