@@ -68,6 +68,7 @@ set autoindent
 
 " wrap settings
 set textwidth=120
+set colorcolumn=+1
 
 " find settings
 set ignorecase
