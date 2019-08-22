@@ -66,3 +66,6 @@ function ToggleWhiteSpace()
 endfunction
 nnoremap <F10> mz:execute ToggleWhiteSpace()<cr>`z
 
+" turn off automatic text wrapping
+nnoremap <F11> :set fo-=t<cr>
+
