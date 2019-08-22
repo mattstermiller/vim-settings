@@ -51,7 +51,7 @@ function ToggleTab()
         echo "indenting with spaces"
     endif
 endfunction
-nnoremap <F9> mz:execute ToggleTab()<cr>'z
+nnoremap <F9> mz:execute ToggleTab()<cr>`z
 
 " show/hide whitespace chars
 set listchars=eol:$,tab:>-,trail:~,extends:>,precedes:<
@@ -64,5 +64,5 @@ function ToggleWhiteSpace()
         echo "showing whitespace"
     endif
 endfunction
-nnoremap <F10> mz:execute ToggleWhiteSpace()<cr>'z
+nnoremap <F10> mz:execute ToggleWhiteSpace()<cr>`z
 
