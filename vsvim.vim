@@ -2,7 +2,6 @@
 
 nmap <leader><leader>s :vsc Tools.InvokeAceJumpCommand<cr>
 nmap gi :vsc Edit.GoToImplementation<cr>
-nmap gl :vsc View.SolutionExplorer<cr>
 nmap gq :vsc Edit.FormatDocument<cr>
 vmap gq :vsc Edit.FormatSelection<cr>
 nmap <leader>ws :vsc Window.NewVerticalTabGroup<cr>
