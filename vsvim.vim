@@ -1,5 +1,7 @@
 ﻿so ~/.vim/bundle/vim-settings/common.vim
 
+set scrolloff=3
+
 nmap <leader><leader>s :vsc Tools.InvokeAceJumpCommand<cr>
 nmap gi :vsc Edit.GoToImplementation<cr>
 nmap gq :vsc Edit.FormatDocument<cr>
