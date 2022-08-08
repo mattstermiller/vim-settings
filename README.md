@@ -1,6 +1,8 @@
 # Vim Settings
 Syncs personal VIM settings using Vundle.
 
+**WARNING: I now use a unified [home settings](https://github.com/mattstermiller/home-settings) repo instead of this. Also, Vundle is no longer maintained and I do not recommend using it anymore. I'm keeping this repo for historical purposes only.**
+
 ### Setting up your own GitHub-hosted Vim settings
 - Clone this repository.
 - Replace the ``common.vim`` with your own vimrc.
